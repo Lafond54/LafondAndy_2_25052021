@@ -1,0 +1,456 @@
+/* --- CSS PC et Format mobile----  */
+
+
+@font-face { /* Définition d'une nouvelle police nommée Raleway */
+    font-family:'Raleway';
+    src: url('Police/Raleway-VariableFont_wght.ttf') format("ttf");
+
+}
+
+
+body /* -- Type de police dans body & marge-- */
+{
+    font-family: 'Raleway', Arial, serif;
+    margin: 0;
+    
+}
+
+
+
+/* *** Fonts **** */
+
+h1
+{font-size: 2.4em;
+}
+
+h2
+{font-size: 1.5em;
+
+}
+
+h3{font-size: 1.1em;
+    white-space: normal;
+
+}
+
+.titre_main_article
+{font-size: 1.55em;
+margin-left: 20px;
+font-weight: bold;
+}
+
+
+
+
+/* *** Couleur fond Body*** */
+
+body
+{background-color:#ffffff;
+
+
+}
+
+
+
+/* *** Header*** */
+
+.header
+{
+
+}
+
+.topheader
+{display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 45px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+
+.button_header
+{display: flex;
+justify-content:space-around;
+                              /* <---Quoi mettre pour occuper toute la largeur d'écran? */
+}
+
+.button_header >div
+{flex:1;
+
+}
+
+.logo
+{height: 45px;
+
+}
+
+.sinscrirelink
+{text-decoration: none;
+color: #0065FC;
+font-weight: 580;
+font-size: 1.1em;
+}
+
+
+
+.hebergementlink
+{text-decoration: none;
+    color: #000000;
+    font-size: 1.1em;
+
+}
+
+
+.activitelink
+{text-decoration: none;
+    color: #000000;   
+    font-size: 1.1em;
+
+}
+
+
+/* -----Recher et filtre (main conteneur) ---- */
+
+.recherche_et_filtre
+{margin-left: 20px;
+
+}
+
+
+/* -------Recherche (main) --------- */
+
+.recherche
+{display: flex;
+}
+
+
+/* ***** icone recherche (Box)***** */
+
+
+.box_icone_recherche
+{   display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* ****** Icone Recherche (image) ***** */
+
+.box_icone_recherche img
+{ 
+
+}
+/* ***** Bouton Rechercher (Box) ***** */
+
+.box_bouton_rechercher
+{align-items: center;
+
+
+}
+
+
+
+/* ---------Filtres (main conteneur) ----------- */
+
+.filtre 
+{display: flex;
+flex-wrap: wrap;
+align-items: center;
+
+
+}
+
+/* **** Filtres ( items BOX + icone + mot clé)***** */
+
+.filtre_recherche 
+{display: flex;
+    flex-wrap: nowrap;
+
+}
+
+
+.icone_filtre{
+
+}
+
+.mot_filtre{font-size: h3;
+
+
+}
+
+
+
+
+
+
+
+/* ------------------Section H et P (Mega conteneur h + p)-------------------------- */
+.HP
+{display: flex;
+flex-wrap: wrap;
+}
+
+.HP .fond_hebergement:nth-child(1) { 
+order: 2;
+
+}
+
+
+
+
+/* ------------------CSS Hebergement-------------------------- */
+
+/* *** Fond Hebergement (derrière les Box)*** */ 
+.fond_hebergement
+{background-color:#F2F2F2;
+border-radius: 20px 20px 20px 20px;
+border: 1px black solid;
+margin-top: 20px;
+margin-left: 20px;
+margin-right: 20px;
+
+
+}
+
+/* **** Header hebergement  ***** */
+
+.header_hebergement{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+
+
+/* *** Flex parent des articles Hebergement (Ensembles des articles Hebergement) *** */
+.flex_article_hebergement
+{display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+
+}
+
+
+/* *** Mise en forme article Hebergement (Item flex)*** */
+.article_hebergement
+{
+background-color:#ffffff;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 2px 2px 11px rgb(156, 156, 156);
+padding: 4px;
+margin-bottom: 30px;
+margin-left: 20px;
+margin-right: 20px;
+flex-basis: 300px;
+flex-shrink: 1;
+flex-grow: 1;
+}
+
+/* *** Flex elements enfants des articles Hebergement (In-item)*** */
+.flex_article_hebergement div
+{display:flex;
+width: auto;
+height: auto;
+
+
+}
+
+
+/* *** Image d'article hebergement*** */
+.image_article_hebergement
+{border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 200px;
+   object-fit: cover;
+
+}
+
+
+
+/* ------------------CSS Populaire-------------------------- */
+
+/* *** Fond populaire (derrière les Box)*** */ 
+.fond_populaire
+{background-color:#F2F2F2;
+border-radius: 20px 20px 20px 20px;
+border: 1px black solid;
+width: 100%;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+
+
+/* **** Header populaire  ***** */
+
+.header_populaire{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+
+}
+
+.icone_populaire{
+margin-right: 20px;
+font-size: 1.5em;
+
+}
+
+
+
+
+
+
+/* *** Flex parent des articles populaires (Ensemble des articles) *** */
+.flex_article_populaire
+{display: flex;
+flex-wrap: wrap;
+flex-basis: 300px;
+width: auto;
+
+}
+
+
+
+/* *** Mise en forme article populaire (image gauche + zone texte droite )*** */
+.article_populaire
+{
+background-color:#ffffff;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 2px 2px 11px rgb(156, 156, 156);
+padding: 4px;
+margin-bottom: 30px;
+margin-left: 20px;
+margin-right: 20px;
+width: 90%;
+height: 180px;
+display: flex;
+
+flex-direction: row;
+flex-basis: 400px;
+flex-shrink: 1;
+flex-grow: 1;
+
+
+}
+
+
+/* *** FLEX en colonne 2 textes + etoiles*** */
+
+.texte_article_populaire{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+   
+
+
+}
+
+
+/* *** Image d'article *** */
+.image_article_populaire
+{border-radius: 20px 0px 0px 20px;
+     
+    width: 100%;    
+    height: 180px;
+    max-width: 180px;
+   object-fit: cover;
+
+
+    
+
+}
+
+/* **** Zone image populaire */
+.item1_article_populaire
+{max-width: 320px;
+
+}
+
+/* -----------  Footer  -------------- */
+
+
+.main_footer
+{display: flex;
+flex-direction: column;
+background-color:#F2F2F2;
+padding-left: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+/* ----- Media Queries ------- */
+
+
+
+
+
+/* ------ MQ Footer >700px ------- */
+@media screen and (min-width: 700px){
+.main_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: auto;
+    padding-left: 0px;
+}
+
+
+}      
+
+
+
+
+/* ------ MQ Aside bascule à droite >1280px ------- */
+@media screen and (min-width: 1280px)
+{
+body
+{margin-left: 50px;
+margin-right: 50px;
+
+}
+
+.HP
+{display: flex;
+flex-wrap: nowrap;
+flex-direction: row-reverse;
+}
+.fond_hebergement
+{margin-top: 0px;
+    
+}
+
+.fond_populaire
+{width: 28% ;
+}
+.fond_hebergement{
+width: 72%;
+}
+
+
+.image_article_populaire
+{
+     
+    width: 150px;
+    
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+
+}
