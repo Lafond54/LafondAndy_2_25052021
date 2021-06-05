@@ -1,236 +1,252 @@
-/* --- CSS PC et Format mobile----  */
+/* --- CSS PC, tablette et Format mobile----  */
 
-
-@font-face { /* Définition d'une nouvelle police nommée Raleway */
-    font-family:'Raleway';
+@font-face {
+    /* Définition d'une nouvelle police nommée Raleway */
+    font-family: 'Raleway';
     src: url('Police/Raleway-VariableFont_wght.ttf') format("ttf");
-
 }
 
+/* ---- Couleur fond Body ---- */
 
-body /* -- Type de police dans body & marge-- */
-{
+body {
+    background-color: #ffffff;
+}
+
+body
+/* -- Type de police dans body & marge-- */
+
+    {
     font-family: 'Raleway', Arial, serif;
     margin: 0;
-    
 }
-
-
 
 /* *** Fonts **** */
 
-h1
-{font-size: 1.3rem;
+h1 {
+    font-size: 1.3rem;
 }
 
-h2
-{font-size: 1.25em;
-
+h2 {
+    font-size: 1.25rem;
 }
 
-h3{font-size: 1.1em;
+h3 {
+    font-size: 1.2rem;
     white-space: normal;
-
 }
 
-.titre_main_article
-{font-size: 1.40em;
-margin-left: 20px;
-font-weight: bold;
+.prix {
+    font-weight: 600;
 }
 
-
-
-
-/* *** Couleur fond Body*** */
-
-body
-{background-color:#ffffff;
-
-
+.texte_footer {
+    font-size: 1.2rem;
+    font-weight: 650;
 }
 
+/* --- Mise en forme texte et etoiles des articles */
 
-
-/* **** Header**** */
-
-.header
-{
-
+.titre_main_article {
+    font-size: 1.40rem;
+    font-weight: bold;
 }
 
-.topheader
-{display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 45px;
-padding-left: 20px;
-padding-right: 20px;
+.h3_article {
+    margin: 0.25rem 0.5rem 0.2rem 0.8rem;
 }
 
-
-.button_header
-{display: flex;
-justify-content:space-around;
-text-align: center;
-
+.h3_article_activite {
+    margin: 0.90rem 0.5rem 0.60rem 0.8rem;
 }
 
-.button_header >div
-{flex:1;
-justify-content: center;
-
-
+.soustitre_article {
+    margin: 0.25rem 0.5rem 0.2rem 0.8rem;
 }
 
-.logo
-{height: 45px;
-
+.espace_etoiles, .espace_etoiles4, .espace_etoiles3 {
+    margin: 0.25rem 0.5rem 0.2rem 0.8rem;
 }
 
-.sinscrirelink
-{text-decoration: none;
-color: #0065FC;
-font-weight: 600;
-font-size: 1.1em;
+.fas.fa-star {
+    color: #0065FC;
 }
 
+/* *** Selecteur couleur des étoiles *** */
 
+.espace_etoiles4 i:nth-of-type(n+5) {
+    color: #dbdbdb;
+}
 
-.hebergementlink
-{display: flex;
+.espace_etoiles3 i:nth-of-type(n+4) {
+    color: #dbdbdb;
+}
+
+/* ---- Header ---- */
+
+.header {
+    position: relative;
+}
+
+.topheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button_header {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.button_header>div {
+    flex: 1;
+    justify-content: center;
+}
+
+.logo {
+    height: 45px;
+}
+
+.sinscrirelink {
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.hebergementlink {
+    display: flex;
     justify-content: center;
     text-decoration: none;
     color: #000000;
     font-size: 1rem;
-   padding-bottom: 30px
-
+    padding-bottom: 30px;
+    border-bottom: 3px solid #ffffff00;
+    font-weight: 500;
 }
 
-.hebergementlink:hover{
+.hebergementlink:hover {
     border-bottom: 3px solid #0065FC;
+    color: #0065FC;
 }
 
-.activitelink
-{display: flex;
+.activitelink {
+    display: flex;
     justify-content: center;
     text-decoration: none;
-    color: #000000;   
+    color: #000000;
     font-size: 1rem;
-    padding-bottom: 30px
-
+    padding-bottom: 30px;
+    font-weight: 500;
+    border-bottom: 3px solid #ffffff00;
 }
 
-.activitelink:hover{
+.activitelink:hover {
     border-bottom: 3px solid #0065FC;
+    color: #0065FC;
 }
-
-
 
 /* -----Recher et filtre (main conteneur) ---- */
 
-.recherche_et_filtre
-{margin-left: 20px;
-
+.recherche_et_filtre {
+    margin-left: 20px;
 }
-
 
 /* -------Recherche (main conteneur) + mise en forme des enfants --------- */
 
-.recherche
-{display: flex;
-align-items: center;
-height: 46px;
-margin-bottom: 20px;
+.recherche {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    margin-bottom: 20px;
 }
 
-.recherche > div:nth-child(1){     /* Mise en forme fond de la box avec icone GPS */
-background-color:#F2F2F2;
-border-radius: 12px 0px 0px 12px;
-width: 45px;
-height: 46px;
- }
+.recherche>div:nth-child(1) {
+    /* Mise en forme fond de la box avec icone GPS */
+    background-color: #F2F2F2;
+    border-radius: 12px 0px 0px 12px;
+    width: 45px;
+    height: 46px;
+}
 
- .recherche > div:nth-child(4){    /* Cacher le mot rechercher */
-     display: none;
- }
-
-     
 /* ***** icone recherche (image GPS)***** */
 
-
-.box_icone_recherche
-{   display: flex;
-align-items: center;
-justify-content: center;
-flex-shrink: 0;
-
-
+.box_icone_recherche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 /* ***** Bouton Rechercher (Box) ***** */
 
-.box_bouton_rechercher    /* Image Loupe */
-{display: flex;
+.box_bouton_rechercher
+/* Image Loupe */
+
+    {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#0065FC;
+    background-color: #0065FC;
     border-radius: 12px 12px 12px 12px;
-height: 44px;
-min-width: 44px;
-position: relative;
-left: -10px;
-color: white;
+    height: 44px;
+    min-width: 44px;
+    position: relative;
+    left: -10px;
+    color: white;
 }
 
-.box_bouton_rechercher2   /* Mot Rechercher */
-{display: flex;
-align-items: center;
-background-color:#0065FC;
-border-radius: 0px 12px 12px 0px;
-height: 44px;
-}
+.box_bouton_rechercher2
+/* Mot Rechercher */
 
+    {
+    display: flex;
+    align-items: center;
+    background-color: #0065FC;
+    border-radius: 0px 12px 12px 0px;
+    height: 44px;
+    padding: 0rem 0.8rem 0rem 0.8rem;
+    color: white;
+    font-weight: 600;
+}
 
 /* ***** Champ de saisi ***** */
-.champ{
-height: 40px;
-width: 100%;
-font-size: 1.2rem;
-border-left: none;
-border-right: none;
-border-top: #F2F2F2 1px solid;
-border-bottom:#F2F2F2 1px solid;
+
+.champ {
+    height: 40px;
+    width: 100%;
+    font-size: 1.2rem;
+    border-left: none;
+    border-right: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
 }
-
-
 
 /* ---------Filtres (main conteneur) ----------- */
 
-.filtre 
-{display: flex;
-flex-wrap: wrap;
-align-items: center;
-
-
+.filtre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 /* ** Filtres ( icon BOX + mot clé) ** */
 
-.filtre_recherche 
-{display: flex;
+.filtre_recherche {
+    display: flex;
     flex-wrap: nowrap;
     align-items: center;
     height: 55px;
-border: 2px solid #d8d8d8;
-border-radius:  55px;
-
-margin: 10px;
+    border: 2px solid #d8d8d8;
+    border-radius: 55px;
+    margin: 10px;
 }
 
-
-
-.icone_filtre_image{
+.icone_filtre_image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,288 +257,535 @@ margin: 10px;
     color: #0065FC;
 }
 
-
-
-.mot_filtre{display: flex;
+.mot_filtre {
+    display: flex;
     justify-content: center;
     font-size: 1rem;
     font-weight: bold;
     margin-left: 15px;
     margin-right: 15px;
-
-
 }
 
+/* ------Phrase " I 500 logements sont dispo" --------- */
 
+.info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 
-
-
+.box_icone_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #0065FC;
+    background-color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 1px #d8d8d8 solid;
+    margin-right: 15px;
+}
 
 
 /* ------------------Section H et P (Mega conteneur h + p)-------------------------- */
-.HP
-{display: flex;
-flex-wrap: wrap;
+
+.HP {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.HP .fond_hebergement:nth-child(1) { 
-order: 2;
-
+.HP .fond_hebergement:nth-child(1) {
+    order: 2;
 }
-
-
-
 
 /* ------------------CSS Hebergement-------------------------- */
 
-/* *** Fond Hebergement (derrière les Box)*** */ 
-.fond_hebergement
-{background-color:#F2F2F2;
-border-radius: 20px 20px 20px 20px;
-border: 1px black solid;
-margin-top: 20px;
+/* *** Fond Hebergement (derrière les Box)*** */
 
-
+.fond_hebergement {
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 20px;
+    padding-left: 20px;
 }
 
 /* **** Header hebergement  ***** */
 
-.header_hebergement{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    align-items: center;
-}
-
-
-
-/* *** Flex parent des articles Hebergement (Ensembles des articles Hebergement) *** */
-.flex_article_hebergement
-{display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-
-
-}
-
-
-/* *** Mise en forme article Hebergement (Item flex)*** */
-.article_hebergement
-{
-background-color:#ffffff;
-border-radius: 20px 20px 20px 20px;
-box-shadow: 2px 2px 11px rgb(156, 156, 156);
-padding: 4px;
-margin-bottom: 30px;
-margin-left: 20px;
-margin-right: 20px;
-flex-basis: 300px;
-flex-shrink: 1;
-flex-grow: 1;
-}
-
-/* *** Flex elements enfants des articles Hebergement (In-item)*** */
-.flex_article_hebergement div
-{display:flex;
-width: auto;
-height: auto;
-
-
-}
-
-
-/* *** Image d'article hebergement*** */
-.image_article_hebergement
-{border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 200px;
-   object-fit: cover;
-
-}
-
-
-
-/* ------------------CSS Populaire-------------------------- */
-
-/* *** Fond populaire (derrière les Box)*** */ 
-.fond_populaire
-{background-color:#F2F2F2;
-border-radius: 20px 20px 20px 20px;
-border: 1px black solid;
-width: 100%;
-
-}
-
-
-
-/* **** Header populaire  ***** */
-
-.header_populaire{
+.header_hebergement {
     display: flex;
     justify-content: space-between;
     height: 90px;
     align-items: center;
-
 }
 
-.icone_populaire{
-margin-right: 20px;
-font-size: 1.5em;
+/* *** Flex parent des articles Hebergement (Ensembles des articles Hebergement) *** */
 
+.flex_article_hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+/* *** Mise en forme article Hebergement (Item flex)*** */
 
+.article_hebergement {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 4px 4px 11px rgba(209, 209, 209, 0.808);
+    padding: 4px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
 
+/* *** Flex elements enfants des articles Hebergement (In-item)*** */
 
+.contenu_hebergement {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
 
+/* *** Image d'article hebergement*** */
+
+.image_article_hebergement {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.footer_hebergement {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* ------------------CSS Populaire-------------------------- */
+
+/* *** Fond populaire (derrière les Box)*** */
+
+.fond_populaire {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* **** Header populaire  ***** */
+
+.header_populaire {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.icone_populaire {
+    margin-right: 20px;
+    font-size: 1.5em;
+}
 
 /* *** Flex parent des articles populaires (Ensemble des articles) *** */
-.flex_article_populaire
-{display: flex;
-flex-wrap: wrap;
-flex-basis: 300px;
-width: auto;
 
+.flex_article_populaire {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
 }
-
-
 
 /* *** Mise en forme article populaire (image gauche + zone texte droite )*** */
-.article_populaire
-{
-background-color:#ffffff;
-border-radius: 20px 20px 20px 20px;
-box-shadow: 2px 2px 11px rgb(156, 156, 156);
-padding: 4px;
-margin-bottom: 30px;
-margin-left: 20px;
-margin-right: 20px;
-width: 90%;
-height: 180px;
-display: flex;
 
-flex-direction: row;
-flex-basis: 400px;
-flex-shrink: 1;
-flex-grow: 1;
-
-
+.article_populaire {
+    background-color: #ffffff;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 4px 4px 11px rgba(209, 209, 209, 0.808);
+    padding: 4px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 400px;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
-
 
 /* *** FLEX en colonne 2 textes + etoiles*** */
 
-.texte_article_populaire{
+.texte_article_populaire {
     display: flex;
     flex-direction: column;
     overflow: auto;
-
-   
-
-
 }
 
-
 /* *** Image d'article *** */
-.image_article_populaire
-{border-radius: 20px 0px 0px 20px;
-     
-    width: 100%;    
-    height: 180px;
-    max-width: 180px;
-   object-fit: cover;
 
-
-    
-
+.image_article_populaire {
+    border-radius: 20px 0px 0px 20px;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
 }
 
 /* **** Zone image populaire */
-.item1_article_populaire
-{max-width: 320px;
 
+.item1_article_populaire {
+    max-width: 160px;
+}
+
+.espace_blanc {
+    flex: 1;
+}
+
+/* -----------  Activité -------------- */
+
+.activite {
+    padding-left: 30px;
 }
 
 /* -----------  Footer  -------------- */
 
-
-.main_footer
-{display: flex;
-flex-direction: column;
-background-color:#F2F2F2;
-padding-left: 20px;
-
-
-
-}
-
-
-
-
-
-
-
-/* ----- Media Queries ------- */
-
-
-
-
-
-/* ------ MQ Footer >700px ------- */
-@media screen and (min-width: 700px){
-.main_footer{
+.main_footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-basis: auto;
-    padding-left: 0px;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding-left: 20px;
+    margin-top: 30px;
 }
 
+/* ----- Media Queries ----------------------------------------------------------------------------------------- */
 
-}      
+/* ------ <1279px ------- */
 
+@media screen and (max-width: 699px) {
+    .recherche>div:nth-child(4) {
+        /* Cacher le mot rechercher */
+        display: none;
+    }
+}
 
+/* ------ MQ Nav en haut + Footer en row >700px ------- */
 
+@media screen and (min-width: 700px) {
+    .main_footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-basis: auto;
+        padding-left: 0px;
+    }
+    .button_header {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: -18px;
+        right: 120px;
+        width: 400px;
+    }
+    .hebergementlink {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: #000000;
+        font-size: 1rem;
+        padding-top: 30px;
+        margin-top: px;
+        border-bottom: none;
+        border-top: 3px solid #ffffff00;
+        font-weight: 500;
+    }
+    .activitelink {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: #000000;
+        font-size: 1rem;
+        padding-top: 30px;
+        font-weight: 500;
+        border-bottom: none;
+        border-top: 3px solid #ffffff00;
+    }
+    .activitelink:hover {
+        border-bottom: none;
+        border-top: 3px solid #0065FC;
+        color: #0065FC;
+    }
+    .hebergementlink:hover {
+        border-bottom: none;
+        border-top: 3px solid #0065FC;
+        color: #0065FC;
+    }
+    .recherche>div:nth-child(3) {
+        /* Cacher la loupe */
+        display: none;
+    }
+}
 
 /* ------ MQ Aside bascule à droite >1280px ------- */
-@media screen and (min-width: 1280px)
-{
-body
-{margin-left: 50px;
-margin-right: 50px;
 
+@media screen and (min-width: 1280px) {
+
+    h1 {
+        font-size: 1.9rem;
+    }
+    .HP {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+    }
+    .fond_hebergement {
+        margin-top: 0px;
+        margin-right: 20px;
+    }
+    .fond_populaire {
+        flex: 3;
+    }
+    .fond_hebergement {
+        flex: 7;
+    }
+    .image_article_populaire {
+        width: 150px;
+        height: 100%;
+        object-fit: cover;
+    }
+    /*  -- Marge Giga conteneur -- */
+    .giga_conteneur {
+        max-width: 1600px;
+    }
 }
 
-.HP
-{display: flex;
-flex-wrap: nowrap;
-flex-direction: row-reverse;
-}
-.fond_hebergement
-{margin-top: 0px;
-    
+/*  -- Marge activité-- */
+
+@media screen and (min-width: 1281px) {
+    .activite {
+        padding-left: 0px;
+    }
 }
 
-.fond_populaire
-{width: 28% ;
-}
-.fond_hebergement{
-width: 72%;
-}
+/*  -- Marge -- >797px */
 
-
-.image_article_populaire
-{
-     
-    width: 150px;
-    
-    height: 100%;
-
-    object-fit: cover;
-
+@media screen and (min-width: 797px) {
+    .giga_conteneur {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
 }
 
+/* ----------- MQ ACTIVITé >797px------------ */
 
+@media screen and (min-width: 1280px) {
+    /* *** Grille Grid *** */
+    .grid_activite {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.1fr 0.1fr 0.1fr 0.1fr 1fr;
+        column-gap: 30px;
+    }
+    #activite1 {
+        grid-column: 1;
+        grid-row: 1 / 7;
+    }
+    #activite2 {
+        grid-column: 2;
+        grid-row: 1 / 5;
+    }
+    #activite3 {
+        grid-column: 2;
+        grid-row: 6 / 7;
+    }
+    #activite4 {
+        grid-column: 3;
+        grid-row: 1 / 7;
+    }
+    #activite5 {
+        grid-column: 4;
+        grid-row: 1 / 1;
+    }
+    #activite6 {
+        grid-column: 4;
+        grid-row: 3 / 7;
+    }
+    /* **** Header activité  ***** */
+    .header_activite {
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        align-items: center;
+    }
+    /* *** Box image + titre activité *** */
+    .contenu_activite {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    /* *** Mise en forme article activité (Item flex)*** */
+    .article_activite {
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 4px 4px 11px rgba(209, 209, 209, 0.808);
+        display: flex;
+        flex: 1;
+    }
+    /* *** Image d'article activite*** */
+    .image_article_activite1 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 505px;
+        object-fit: cover;
+    }
+    .image_article_activite2 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .image_article_activite3 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .image_article_activite4 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 505px;
+        object-fit: cover;
+    }
+    .image_article_activite5 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .image_article_activite6 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+}
 
+/* ----------- MQ ACTIVITé <1280px------------ */
 
+@media screen and (max-width: 1280px) {
+    /* **** Header activité  ***** */
+    .header_activite {
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        align-items: center;
+    }
+    /* *** Flex parent des articles activite (Ensembles des articles Hebergement) *** */
+    .flex_article_activite>div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* *** Mise en forme article activité (Item flex)*** */
+    .article_activite {
+        display: flex;
+        flex: 1;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 4px 4px 11px rgba(209, 209, 209, 0.808);
+        padding: 4px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        margin-left: px;
+        flex-basis: 300px;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+    /* *** Image d'article activite*** */
+    .image_article_activite1 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+    .image_article_activite2 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+    .image_article_activite3 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+    .image_article_activite4 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+    .image_article_activite5 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+    .image_article_activite6 {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+    .contenu_activite {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* ----------- MQ ACTIVITé entre 797 et 1280------------ */
+
+@media screen and (min-width: 797px) and (max-width:1280px) {
+    .grid_activite {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/* ----------- Fond populaire ------------ */
+
+@media screen and (max-width:797px) {
+    .fond_populaire {
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        width: 100%;
+    }
+    .fond_hebergement {
+        background-color: #f2f2f200;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* ----------- MQ Disposition flex populaire  entre 972 et 1279------------ */
+
+@media screen and (min-width: 972px) and (max-width:1279px) {
+    .flex_article_populaire {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: 300px;
+        width: auto;
+    }
+    .image_article_populaire {
+        width: 90px;
+    }
 }
