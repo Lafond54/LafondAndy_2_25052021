@@ -44,6 +44,17 @@ h3 {
     font-weight: 650;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+.sinscrirelink:visited{
+    color: #0065FC;
+}
 /* --- Mise en forme texte et etoiles des articles */
 
 .titre_main_article {
@@ -79,6 +90,18 @@ h3 {
 
 .espace_etoiles3 i:nth-of-type(n+4) {
     color: #dbdbdb;
+}
+/* -- Hover des filtres et articles -- */
+.filtre_recherche:hover{
+    background-color:#f1f1f1c0;
+}
+
+.article_hebergement, .filtre_recherche, .article_populaire, .article_activite{
+    transition: 0.2s;
+
+}
+.article_hebergement:hover, .filtre_recherche:hover, .article_populaire:hover, .article_activite:hover{
+    transform: scale(1.015);
 }
 
 /* ---- Header ---- */
@@ -127,6 +150,7 @@ h3 {
     padding-bottom: 30px;
     border-bottom: 3px solid #ffffff00;
     font-weight: 500;
+
 }
 
 .hebergementlink:hover {
@@ -488,7 +512,7 @@ h3 {
         display: flex;
         align-items: center;
         position: absolute;
-        bottom: -18px;
+        bottom: -16px;
         right: 120px;
         width: 400px;
     }
@@ -498,8 +522,7 @@ h3 {
         text-decoration: none;
         color: #000000;
         font-size: 1rem;
-        padding-top: 30px;
-        margin-top: px;
+        padding-top: 32px;
         border-bottom: none;
         border-top: 3px solid #ffffff00;
         font-weight: 500;
@@ -510,7 +533,7 @@ h3 {
         text-decoration: none;
         color: #000000;
         font-size: 1rem;
-        padding-top: 30px;
+        padding-top: 32px;
         font-weight: 500;
         border-bottom: none;
         border-top: 3px solid #ffffff00;
@@ -697,7 +720,7 @@ h3 {
         height: 90px;
         align-items: center;
     }
-    /* *** Flex parent des articles activite (Ensembles des articles Hebergement) *** */
+    /* *** Flex parent des articles activite (Ensembles des articles activités) *** */
     .flex_article_activite>div {
         display: flex;
         flex-wrap: wrap;
