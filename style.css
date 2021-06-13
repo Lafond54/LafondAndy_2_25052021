@@ -41,20 +41,22 @@ h3 {
 
 .texte_footer {
     font-size: 1.2rem;
-    font-weight: 650;
+    font-weight: 650;   /* <--Erreur W3c ? */
 }
 
-a{
+a {
+    color: black;
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: black;
 }
 
-.sinscrirelink:visited{
+.sinscrirelink:visited {
     color: #0065FC;
 }
+
 /* --- Mise en forme texte et etoiles des articles */
 
 .titre_main_article {
@@ -91,16 +93,18 @@ a:visited{
 .espace_etoiles3 i:nth-of-type(n+4) {
     color: #dbdbdb;
 }
+
 /* -- Hover des filtres et articles -- */
-.filtre_recherche:hover{
-    background-color:#f1f1f1c0;
+
+.filtre_recherche:hover {
+    background-color: #f1f1f1c0;
 }
 
-.article_hebergement, .filtre_recherche, .article_populaire, .article_activite{
+.article_hebergement, .filtre_recherche, .article_populaire, .article_activite {
     transition: 0.2s;
-
 }
-.article_hebergement:hover, .filtre_recherche:hover, .article_populaire:hover, .article_activite:hover{
+
+.article_hebergement:hover, .filtre_recherche:hover, .article_populaire:hover, .article_activite:hover {
     transform: scale(1.015);
 }
 
@@ -150,7 +154,6 @@ a:visited{
     padding-bottom: 30px;
     border-bottom: 3px solid #ffffff00;
     font-weight: 500;
-
 }
 
 .hebergementlink:hover {
@@ -216,7 +219,7 @@ a:visited{
     justify-content: center;
     align-items: center;
     background-color: #0065FC;
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 12px;
     height: 44px;
     min-width: 44px;
     position: relative;
@@ -313,7 +316,6 @@ a:visited{
     margin-right: 15px;
 }
 
-
 /* -------------------Section H et P (Mega conteneur h + p)-------------------------- */
 
 .HP {
@@ -331,7 +333,7 @@ a:visited{
 
 .fond_hebergement {
     background-color: #F2F2F2;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     margin-top: 20px;
     padding-left: 20px;
 }
@@ -360,7 +362,7 @@ a:visited{
     flex: 1;
     height: 100%;
     background-color: #ffffff;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     box-shadow: 4px 4px 11px rgba(209, 209, 209, 0.808);
     padding: 4px;
     margin-bottom: 30px;
@@ -429,7 +431,7 @@ a:visited{
 
 .article_populaire {
     background-color: #ffffff;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     box-shadow: 4px 4px 11px rgba(209, 209, 209, 0.808);
     padding: 4px;
     margin-bottom: 30px;
@@ -557,7 +559,6 @@ a:visited{
 /* ------ MQ Aside bascule à droite >1280px ------- */
 
 @media screen and (min-width: 1280px) {
-
     h1 {
         font-size: 1.9rem;
     }
@@ -584,7 +585,6 @@ a:visited{
     /*  -- Marge Giga conteneur -- */
     .giga_conteneur {
         max-width: 1600px;
-
     }
 }
 
@@ -608,12 +608,8 @@ a:visited{
 }
 
 @media screen and (min-width: 1600px) {
-    .giga_conteneur {
-   
-    }
+    .giga_conteneur {}
 }
-
-
 
 /* ----------- MQ ACTIVITé >797px------------ */
 
@@ -622,8 +618,8 @@ a:visited{
     .grid_activite {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 0.1fr 0.1fr 0.1fr 0.1fr 1fr;
-        column-gap: 30px;
+        grid-template-rows: 1fr 0.15fr 0.1fr 0.1fr 0.15fr 1fr;
+        column-gap: 40px;
     }
     #activite1 {
         grid-column: 1;
@@ -666,7 +662,7 @@ a:visited{
     .article_activite {
         height: 100%;
         background-color: #ffffff;
-        border-radius: 20px 20px 20px 20px;
+        border-radius: 20px;
         box-shadow: 4px 4px 11px rgba(209, 209, 209, 0.808);
         display: flex;
         flex: 1;
@@ -731,12 +727,12 @@ a:visited{
         flex: 1;
         height: 100%;
         background-color: #ffffff;
-        border-radius: 20px 20px 20px 20px;
+        border-radius: 20px;
         box-shadow: 4px 4px 11px rgba(209, 209, 209, 0.808);
         padding: 4px;
         margin-bottom: 30px;
         margin-right: 30px;
-        margin-left: px;
+
         flex-basis: 300px;
         flex-shrink: 1;
         flex-grow: 1;
