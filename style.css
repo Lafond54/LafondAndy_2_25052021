@@ -1,27 +1,22 @@
 /* --- CSS PC, tablette et Format mobile----  */
 
-
-
 /* ---- Couleur fond Body ---- */
 
 body {
     background-color: #ffffff;
 }
 
-
-/* -- Type de police dans body & marge-- */
-
+/* -- Type de police body & marge body-- */
 
 body {
     font-family: 'Raleway', sans-serif;
-  margin: 0;
+    margin: 0;
 }
-
 
 /* *** Fonts **** */
 
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 h2 {
@@ -39,7 +34,7 @@ h3 {
 
 .texte_footer {
     font-size: 1.2rem;
-    font-weight: 650;   /* <--Erreur W3c ? */
+    font-weight: 600;
 }
 
 a {
@@ -53,6 +48,10 @@ a:visited {
 
 .sinscrirelink:visited {
     color: #0065FC;
+}
+
+.titre_filtre {
+    width: 100%;
 }
 
 /* --- Mise en forme texte et etoiles des articles */
@@ -367,7 +366,7 @@ a:visited {
     padding: 4px;
     margin-bottom: 30px;
     margin-right: 30px;
-    flex-basis: 300px;
+    flex-basis: 260px;
     flex-shrink: 1;
     flex-grow: 1;
     height: 200px;
@@ -492,12 +491,24 @@ a:visited {
 
 /* ----- Media Queries ----------------------------------------------------------------------------------------- */
 
-/* ------ <1279px ------- */
+/* ------ Rechercher / Loupe------- */
 
-@media screen and (max-width: 699px) {
+/* Cacher le mot rechercher */
+
+@media screen and (min-width: 0px) {
     .recherche>div:nth-child(4) {
-        /* Cacher le mot rechercher */
         display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    /* Cacher la loupe de 700 à xx */
+    .recherche>div:nth-child(3) {
+        display: none;
+    }
+    /* Apparition du mot rechercher */
+    .recherche>div:nth-child(4) {
+        display: initial;
     }
 }
 
@@ -508,7 +519,7 @@ a:visited {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        flex-basis: auto;
+
         padding-left: 0px;
     }
     .button_header {
@@ -551,10 +562,6 @@ a:visited {
         border-top: 3px solid #0065FC;
         color: #0065FC;
     }
-    .recherche>div:nth-child(3) {
-        /* Cacher la loupe */
-        display: none;
-    }
 }
 
 /* ------ MQ Aside bascule à droite >1280px ------- */
@@ -585,13 +592,13 @@ a:visited {
     }
     /*  -- Marge Giga conteneur -- */
     .giga_conteneur {
-        max-width: 1600px;
+        max-width: 1340px;
     }
 }
 
 /*  -- Marge activité-- */
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1280px) {
     .activite {
         padding-left: 0px;
     }
@@ -612,7 +619,7 @@ a:visited {
     .giga_conteneur {}
 }
 
-/* ----------- MQ ACTIVITé >797px------------ */
+/* ----------- MQ ACTIVITé ------------ */
 
 @media screen and (min-width: 1280px) {
     /* *** Grille Grid *** */
@@ -621,7 +628,6 @@ a:visited {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 195px 40px 40px 160px;
         column-gap: 40px;
-
     }
     #activite1 {
         grid-column: 1;
@@ -658,7 +664,6 @@ a:visited {
     .contenu_activite {
         display: flex;
         flex-direction: column;
-        
         width: 100%;
     }
     /* *** Mise en forme article activité (Item flex)*** */
@@ -668,7 +673,6 @@ a:visited {
         border-radius: 20px;
         box-shadow: 4px 4px 11px rgba(209, 209, 209, 0.808);
         display: flex;
-       
     }
     /* *** Image d'article activite*** */
     .image_article_activite1 {
@@ -737,7 +741,6 @@ a:visited {
         padding: 4px;
         margin-bottom: 30px;
         margin-right: 30px;
-
         flex-basis: 300px;
         flex-shrink: 1;
         flex-grow: 1;
@@ -811,9 +814,9 @@ a:visited {
     }
 }
 
-/* ----------- MQ Disposition flex populaire  entre 972 et 1279------------ */
+/* ----------- MQ Disposition flex populaire  entre 970 et 1280------------ */
 
-@media screen and (min-width: 972px) and (max-width:1279px) {
+@media screen and (min-width: 970px) {
     .flex_article_populaire {
         display: flex;
         flex-wrap: nowrap;
@@ -822,5 +825,25 @@ a:visited {
     }
     .image_article_populaire {
         width: 90px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .flex_article_populaire {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 300px;
+    }
+    .image_article_populaire {
+        width: 150px;
+    }
+}
+
+
+/* -------Passage à la ligne filtre------ */
+
+@media screen and (min-width: 700px) {
+    .titre_filtre {
+        width: initial;
     }
 }
