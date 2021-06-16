@@ -1,10 +1,6 @@
 /* --- CSS PC, tablette et Format mobile----  */
 
-@font-face {
-    /* Définition d'une nouvelle police nommée Raleway */
-    font-family: 'Raleway';
-    src: url('Police/Raleway-VariableFont_wght.ttf') format("ttf"); /* <-- Problème d'affichage de la Police sous Firefox (pc) et Chrome (Mobile) */
-}
+
 
 /* ---- Couleur fond Body ---- */
 
@@ -12,13 +8,15 @@ body {
     background-color: #ffffff;
 }
 
-body
+
 /* -- Type de police dans body & marge-- */
 
-    {
-    font-family: 'Raleway', Arial, serif;
-    margin: 0;
+
+body {
+    font-family: 'Raleway', sans-serif;
+  margin: 0;
 }
+
 
 /* *** Fonts **** */
 
