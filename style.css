@@ -712,7 +712,7 @@ a:visited {
 
 /* ----------- MQ ACTIVITé <1280px------------ */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
     /* **** Header activité  ***** */
     .header_activite {
         display: flex;
@@ -786,7 +786,7 @@ a:visited {
 
 /* ----------- MQ ACTIVITé entre 797 et 1280------------ */
 
-@media screen and (min-width: 797px) and (max-width: 1280px) {
+@media screen and (min-width: 797px) and (max-width: 1279px) {
     .grid_activite {
         display: flex;
         flex-direction: row;
@@ -809,6 +809,23 @@ a:visited {
         margin-top: 0px;
         padding-left: 20px;
         margin-bottom: 20px;
+    }
+}
+
+/* ----------- MQ Disposition flex populaire  entre 650 et 1280------------ */
+
+@media screen and (min-width: 650px) and (max-width: 1000px) {
+    .flex_article_populaire {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-basis: 300px;
+        width: auto;
+    }
+    .image_article_populaire {
+        width: 90px;
+    }
+    #article3_populaire {
+        display: none;
     }
 }
 
