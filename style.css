@@ -821,11 +821,12 @@ a:visited {
     }
 }
 
-/* ----------- MQ Disposition flex populaire  entre 970 et 1280------------ */
+/* ----------- MQ Disposition flex populaire  entre 650 et 1280------------ */
 
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 650px) {
     .flex_article_populaire {
         display: flex;
+        
         flex-wrap: nowrap;
         flex-basis: 300px;
         width: auto;
