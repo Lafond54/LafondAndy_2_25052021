@@ -1,4 +1,4 @@
-/* --- CSS PC, tablette et Format mobile----  */
+/* --- CSS PC, tablette et Format mobile (inclus MQ)----  */
 
 /* ---- Couleur fond Body ---- */
 
@@ -488,6 +488,10 @@ a:visited {
     margin-top: 30px;
 }
 
+.item1_footer, .item2_footer, .item3_footer {
+    flex: 1;
+}
+
 /* ----- Media Queries ----------------------------------------------------------------------------------------- */
 
 /* ------ Rechercher / Loupe------- */
@@ -517,8 +521,11 @@ a:visited {
     .main_footer {
         display: flex;
         flex-direction: row;
-        flex: 1;
-        padding-left: 0px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .item1_footer, .item2_footer, .item3_footer {
+        padding-left: 40px;
     }
     .button_header {
         display: flex;
@@ -816,7 +823,6 @@ a:visited {
 /* ----------- MQ Disposition flex populaire  entre 650 et 1280------------ */
 
 @media screen and (min-width: 650px) and (max-width: 1000px) {
-
     #article3_populaire {
         display: none;
     }
@@ -827,7 +833,6 @@ a:visited {
 @media screen and (min-width: 650px) {
     .flex_article_populaire {
         display: flex;
-        
         flex-wrap: nowrap;
         flex-basis: 300px;
         width: auto;
