@@ -149,7 +149,7 @@ a:visited {
     color: #000000;
     font-size: 1rem;
     padding-bottom: 30px;
-    border-bottom: 3px solid #ffffff00;
+    border-bottom: 3px solid #F2F2F2;
     font-weight: 500;
 }
 
@@ -166,7 +166,7 @@ a:visited {
     font-size: 1rem;
     padding-bottom: 30px;
     font-weight: 500;
-    border-bottom: 3px solid #ffffff00;
+    border-bottom: 3px solid #F2F2F2;
 }
 
 .activitelink:hover {
